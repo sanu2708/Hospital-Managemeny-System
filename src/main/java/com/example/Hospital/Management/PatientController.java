@@ -33,11 +33,12 @@ public class PatientController {
     @GetMapping("/getAllPatients")
     public List<Patient> addPatient(){
         List<Patient> patients = new ArrayList<>();
-        for(Patient p : patientDb.values())
-        {
-            patients.add(p);
-        }
-        return patients;
+//        for(Patient p : patientDb.values())
+//        {
+//            patients.add(p);
+//        }
+//        return patients;
+        return patientDb.values().stream().toList();  // we can use this line also
     }
 
     @GetMapping("/getPatientByName")
