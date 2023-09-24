@@ -16,6 +16,6 @@ public class DoctorController {
     {
         int key  = doctor.getDoctorId();
         doctorDb.put(key,doctor);
-        return "DOCTOR ADDED SUCCESSFULLY";
+        return "DOCTOR ADDED SUCCESSFULLY on database";
     }
 }
