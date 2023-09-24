@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @RestController
-public class HospitalController {
+public class PatientController {
     HashMap<Integer,Patient> patientDb = new HashMap<>();
     @PostMapping("/addPatientViaParam")
     public String addPatient(@RequestParam("patientId") Integer patientId, @RequestParam("name") String name, @RequestParam("disease") String disease, @RequestParam("age") Integer age){
