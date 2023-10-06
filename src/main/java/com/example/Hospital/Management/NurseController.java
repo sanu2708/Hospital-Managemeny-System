@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Nurse")
+@RequestMapping("/Nurse")   //use this to avoid repetitive annotations
 public class NurseController {
     NurseService nurseService = new NurseService();
     @PostMapping("/add")
